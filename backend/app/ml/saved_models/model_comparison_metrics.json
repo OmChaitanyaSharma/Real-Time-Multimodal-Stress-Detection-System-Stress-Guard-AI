@@ -1,0 +1,161 @@
+{
+  "best_model": "SupportVectorMachine",
+  "feature_columns": [
+    "sleep_hours",
+    "screen_time_hours",
+    "work_study_hours",
+    "academic_work_pressure",
+    "physical_activity_mins",
+    "break_frequency",
+    "self_reported_mood",
+    "perceived_stress_level"
+  ],
+  "label_mapping": {
+    "Low": 0,
+    "Moderate": 1,
+    "High": 2
+  },
+  "inverse_mapping": {
+    "0": "Low",
+    "1": "Moderate",
+    "2": "High"
+  },
+  "metrics": {
+    "RandomForest": {
+      "cv_accuracy_mean": 0.8325,
+      "cv_accuracy_std": 0.0081,
+      "test_accuracy": 0.8083,
+      "precision_macro": 0.804,
+      "recall_macro": 0.8011,
+      "f1_macro": 0.8025,
+      "precision_weighted": 0.8075,
+      "recall_weighted": 0.8083,
+      "f1_weighted": 0.8079,
+      "roc_auc": 0.9482,
+      "confusion_matrix": [
+        [
+          243,
+          34,
+          0
+        ],
+        [
+          39,
+          140,
+          20
+        ],
+        [
+          0,
+          22,
+          102
+        ]
+      ],
+      "classes": [
+        "Low",
+        "Moderate",
+        "High"
+      ]
+    },
+    "XGBoost": {
+      "cv_accuracy_mean": 0.8279,
+      "cv_accuracy_std": 0.0081,
+      "test_accuracy": 0.8317,
+      "precision_macro": 0.828,
+      "recall_macro": 0.8207,
+      "f1_macro": 0.8242,
+      "precision_weighted": 0.8316,
+      "recall_weighted": 0.8317,
+      "f1_weighted": 0.8315,
+      "roc_auc": 0.9514,
+      "confusion_matrix": [
+        [
+          249,
+          28,
+          0
+        ],
+        [
+          33,
+          149,
+          17
+        ],
+        [
+          0,
+          23,
+          101
+        ]
+      ],
+      "classes": [
+        "Low",
+        "Moderate",
+        "High"
+      ]
+    },
+    "SupportVectorMachine": {
+      "cv_accuracy_mean": 0.8358,
+      "cv_accuracy_std": 0.009,
+      "test_accuracy": 0.8367,
+      "precision_macro": 0.8352,
+      "recall_macro": 0.8258,
+      "f1_macro": 0.8301,
+      "precision_weighted": 0.8374,
+      "recall_weighted": 0.8367,
+      "f1_weighted": 0.8368,
+      "roc_auc": 0.9562,
+      "confusion_matrix": [
+        [
+          249,
+          28,
+          0
+        ],
+        [
+          32,
+          152,
+          15
+        ],
+        [
+          0,
+          23,
+          101
+        ]
+      ],
+      "classes": [
+        "Low",
+        "Moderate",
+        "High"
+      ]
+    },
+    "LogisticRegression": {
+      "cv_accuracy_mean": 0.8433,
+      "cv_accuracy_std": 0.0068,
+      "test_accuracy": 0.8233,
+      "precision_macro": 0.819,
+      "recall_macro": 0.8099,
+      "f1_macro": 0.814,
+      "precision_weighted": 0.8215,
+      "recall_weighted": 0.8233,
+      "f1_weighted": 0.822,
+      "roc_auc": 0.957,
+      "confusion_matrix": [
+        [
+          252,
+          25,
+          0
+        ],
+        [
+          39,
+          142,
+          18
+        ],
+        [
+          0,
+          24,
+          100
+        ]
+      ],
+      "classes": [
+        "Low",
+        "Moderate",
+        "High"
+      ]
+    }
+  }
+}
